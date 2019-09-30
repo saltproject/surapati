@@ -67,12 +67,13 @@ if(isset ($_GET["Notif"]) && !empty ($_GET["Notif"])){
 </head>
 
 <body class="login-page">
+  <img src="assets/images/bg-1.jpg">
     <div class="login-box">
         <div class="logo">
             <a href="javascript:void(0);"><b>Admin</b>Panel</a>
             <small>SaltProject - Admin Panel</small>
         </div>
-        <div class="card">
+        <div class="card-login">
             <div class="body">
                 <form action="controller/verify.php" id="sign_in" method="POST">
                     <div class="msg">Sign in to start your session</div>

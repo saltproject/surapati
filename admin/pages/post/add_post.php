@@ -10,7 +10,7 @@
                         <div class="header">
                             <h2>
                                 INPUT ARTIKEL ( as <?php echo "".$_SESSION["username"]."" ?> )
-                                <small>Data kelengkapan komposisi produk</small>
+                                <small>Input Post</small>
                             </h2>
                         </div>
                         <div class="body">

@@ -10,7 +10,7 @@
 				</thead>
 				<tbody>
 					<?php
-						$queryspl = mysqli_query ($connect, "SELECT id_post, post_title, post_author, post_date, post_status, SUBSTRING(post_content,1,100) as post_content FROM bramlawfirm_posts");
+						$queryspl = mysqli_query ($connect, "SELECT id_post, post_title, post_author, post_date, post_status, SUBSTRING(post_content,1,70) as post_content FROM surapati_posts");
 						if($queryspl == false){
 							die ("Terjadi Kesalahan : ". mysqli_error($connect));
 						}

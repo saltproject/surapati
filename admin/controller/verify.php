@@ -5,12 +5,12 @@ include "../config/connection.php";
 $Username = $_POST["username"];
 $Password = md5($_POST['password']);
 
-$query = mysqli_query ($connect, "SELECT * FROM bramlawfirm_user WHERE username='$Username' AND password='$Password'");
+$query = mysqli_query ($connect, "SELECT * FROM surapati_user WHERE username='$Username' AND password='$Password'");
 
 // Validasi Login
 if ($_POST){
 	
-	$queryuser = mysqli_query ($connect, "SELECT * FROM bramlawfirm_user WHERE username='$Username' AND password='$Password'");
+	$queryuser = mysqli_query ($connect, "SELECT * FROM surapati_user WHERE username='$Username' AND password='$Password'");
 		
 	$user = mysqli_fetch_array ($queryuser);
 

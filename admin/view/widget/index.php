@@ -1,7 +1,7 @@
 <?php
                                    include '../config/connection.php';
                                                                         
-                                   $querypost = mysqli_query($connect, "SELECT * FROM bramlawfirm_posts");
+                                   $querypost = mysqli_query($connect, "SELECT * FROM surapati_posts");
                                    if($querypost == false){
                                    die ("Terdapat Kesalahan : ". mysqli_error($connect));
                                    }

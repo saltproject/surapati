@@ -1,3 +1,9 @@
+<?php 
+
+include "admin/config/connection.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -24,7 +30,6 @@
         <!-- Extra plugin css -->
         <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
         <link href="vendors/bootstrap-selector/css/bootstrap-select.min.css" rel="stylesheet">
-        <link href="vendors/jquery-ui/jquery-ui.css" rel="stylesheet">
         
         <link href="css/style.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
@@ -78,7 +83,7 @@
 
                         </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav categories">
                             <li class="nav-item">
                                 <select class="selectpicker">
@@ -91,95 +96,200 @@
                         <ul class="navbar-nav">
                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                            <li class="nav-item"><a class="nav-link" href="categories-no-sidebar-3column.html">Shop</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">F&Q</a></li>
                         </ul>
                     </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </header>
         <!--================End Menu Area =================-->
         
-        <!--================Categories Banner Area =================-->
-        <section class="solid_banner_area">
-            <div class="container">
-                <div class="solid_banner_inner">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+        <!--================Home Carousel Area =================
+        <section class="home_carousel_area">
+            <div class="home_carousel_slider owl-carousel">
+                <div class="item">
+                    <div class="h_carousel_item">
+                        <img src="img/home-carousel/home-c-1.jpg" alt="">
+                        <div class="carousel_hover">
+                            <h3>mens bag</h3>
+                            <h4>We feature the best professional bags </h4>
+                            <h5>Including:</h5>
+                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <a class="discover_btn" href="#">discover now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="h_carousel_item">
+                        <img src="img/home-carousel/home-c-2.jpg" alt="">
+                        <div class="carousel_hover">
+                            <h3>mens bag</h3>
+                            <h4>We feature the best professional bags </h4>
+                            <h5>Including:</h5>
+                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <a class="discover_btn" href="#">discover now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="h_carousel_item">
+                        <img src="img/home-carousel/home-c-3.jpg" alt="">
+                        <div class="carousel_hover">
+                            <h3>mens bag</h3>
+                            <h4>We feature the best professional bags </h4>
+                            <h5>Including:</h5>
+                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <a class="discover_btn" href="#">discover now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="h_carousel_item">
+                        <img src="img/home-carousel/home-c-4.jpg" alt="">
+                        <div class="carousel_hover">
+                            <h3>mens bag</h3>
+                            <h4>We feature the best professional bags </h4>
+                            <h5>Including:</h5>
+                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <a class="discover_btn" href="#">discover now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="h_carousel_item">
+                        <img src="img/home-carousel/home-c-5.jpg" alt="">
+                        <div class="carousel_hover">
+                            <h3>mens bag</h3>
+                            <h4>We feature the best professional bags </h4>
+                            <h5>Including:</h5>
+                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <a class="discover_btn" href="#">discover now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!--================End Categories Banner Area =================-->
+        <!--================End Home Carousel Area =================-->
         
-        <!--================Contact Area =================-->
-        <section class="contact_area p_100">
+        <!--================Special Offer Area =================-->
+        <section class="special_offer_area">
             <div class="container">
-                <div class="contact_title">
-                    <h2>Get in Touch</h2>
-                    <p>Do not hesitate to join us.</p>
-                </div>
-                <div class="row contact_details">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="media">
-                            <div class="d-flex">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            </div>
-                            <div class="media-body">
-                                <p>Surapati 55 D,<br />Bandung, ID.</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="special_offer_item">
+                            <img class="img-fluid" src="img/feature-add/special-offer-1.jpg" alt="">
+                            <div class="hover_text">
+                                <h4>Special Offer</h4>
+                                <h5>Young Couple</h5>
+                                <a class="shop_now_btn" href="#">Shop Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="media">
-                            <div class="d-flex">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                            </div>
-                            <div class="media-body">
-                                <a href="tel:+1109171234567">(022) 2531 400</a>
-                                <a href="tel:+1101911897654">(022) 2531 300</a>
+                    <div class="col-lg-6">
+                        <div class="special_offer_item2">
+                            <img class="img-fluid" src="img/feature-add/special-offer-2.jpg" alt="">
+                            <div class="hover_text">
+                                <h5>girls bag</h5>
+                                <a class="shop_now_btn" href="#">Shop Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="media">
-                            <div class="d-flex">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </div>
-                            <div class="media-body">
-                                <a href="mailto:busines@Surapati House of Printing.com">surapati55d@gmail.com</a>
-                                <a href="mailto:support@Surapati House of Printing.com">surapati55d@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact_form_inner">
-                    <h3>Drop a Message</h3>
-                    <form class="contact_us_form row" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                        <div class="form-group col-lg-4">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name *">
-                        </div>
-                        <div class="form-group col-lg-4">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address *">
-                        </div>
-                        <div class="form-group col-lg-4">
-                            <input type="text" class="form-control" id="website" name="website" placeholder="Your Website">
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Type Your Message..."></textarea>
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <button type="submit" value="submit" class="btn update_btn form-control">Send Message</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </section>
-        <!--================End Contact Area =================-->
+        <!--================End Special Offer Area =================-->
+        
+        <!--================Latest Product isotope Area =================-->
+        <section class="fillter_latest_product">
+            <div class="container">
+                <div class="single_c_title">
+                    <h2>Our Latest Articles</h2>
+                </div>
+                <div class="fillter_l_p_inner">
+                    <div class="row isotope_l_p_inner">
+                         <?php
+                                   include 'admin/config/connection.php';
+                                                                        
+                                   $querypost = mysqli_query($connect, "SELECT post_date, post_title, SUBSTRING(post_content,1,50) as post_content FROM surapati_posts");
+                                   if($querypost == false){
+                                   die ("Terdapat Kesalahan : ". mysqli_error($connect));
+                                   }
+                                   while ($post = mysqli_fetch_array($querypost)){
+                                          $tanggal = $post["post_date"];
+                                  echo "
+                        <div class='col-lg-3 col-md-4 col-sm-6 woman bags'>
+                            <div class='l_product_item'>
+                                <div class='l_p_img'>
+                                    <img class='img-fluid' src='img/product/l-article-1.jpg' alt=''>
+                                </div>
+                                <div class='l_p_text'>
+                                    <ul>
+                                        <li class='p_icon'><a href='#'><i class='icon_piechart'></i></a></li>
+                                        <li><a class='add_cart_btn' href='#'>Read More..</a></li>
+                                        <li class='p_icon'><a href='#'><i class='icon_heart_alt'></i></a></li>
+                                    </ul>
+                                    <h4>$post[post_title]</h4>";
+                                    echo"<h5>";echo date("d M Y", strtotime($tanggal));echo"</h5>";
+                                echo "</div>
+                            </div>
+                        </div>";
+                        }
+                    ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Latest Product isotope Area =================-->
+        
+        
+        <!--================Form Blog Area =================-->
+        <section class="from_blog_area">
+            <div class="container">
+                <div class="from_blog_inner">
+                    <div class="c_main_title">
+                        <h2>Top Blog</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="from_blog_item">
+                                <img class="img-fluid" src="img/blog/from-blog/f-blog-1.jpg" alt="">
+                                <div class="f_blog_text">
+                                    <h5>fashion</h5>
+                                    <p>Neque porro quisquam est qui dolorem ipsum</p>
+                                    <h6>21.09.2017</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="from_blog_item">
+                                <img class="img-fluid" src="img/blog/from-blog/f-blog-2.jpg" alt="">
+                                <div class="f_blog_text">
+                                    <h5>fashion</h5>
+                                    <p>Neque porro quisquam est qui dolorem ipsum</p>
+                                    <h6>21.09.2017</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="from_blog_item">
+                                <img class="img-fluid" src="img/blog/from-blog/f-blog-3.jpg" alt="">
+                                <div class="f_blog_text">
+                                    <h5>fashion</h5>
+                                    <p>Neque porro quisquam est qui dolorem ipsum</p>
+                                    <h6>21.09.2017</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Form Blog Area =================-->
         
         <!--================Footer Area =================-->
         <footer class="footer_area">
@@ -189,7 +299,7 @@
                         <div class="col-lg-4 col-md-4 col-6">
                             <aside class="f_widget f_about_widget">
                                 <img src="img/logo.png" alt="">
-                                <p>Surapati House of Printing is a Premium PSD Template. Best choice for your online store. Let purchase it to enjoy now</p>
+                                <p>Persuit is a Premium PSD Template. Best choice for your online store. Let purchase it to enjoy now</p>
                                 <h6>Social:</h6>
                                 <ul>
                                     <li><a href="#"><i class="social_facebook"></i></a></li>
@@ -258,7 +368,7 @@
                 </div>
                 <div class="footer_copyright">
                     <h5>© <script>document.write(new Date().getFullYear());</script> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Surapati House of Printing</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </h5>
                 </div>
@@ -266,39 +376,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </footer>
         <!--================End Footer Area =================-->
         
-        
-        
-        <!--================Contact Success and Error message Area =================-->
-        <div id="success" class="modal modal-message fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="fa fa-close"></i>
-                        </button>
-                        <h2>Thank you</h2>
-                        <p>Your message is successfully sent...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modals error -->
-
-        <div id="error" class="modal modal-message fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="fa fa-close"></i>
-                        </button>
-                        <h2>Sorry !</h2>
-                        <p> Something went wrong </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--================End Contact Success and Error message Area =================-->
         
         
         
@@ -328,11 +405,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
         <script src="vendors/vertical-slider/js/jQuery.verticalCarousel.js"></script>
         <script src="vendors/jquery-ui/jquery-ui.js"></script>
-        
-        <!-- contact js -->
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/contact.js"></script>
         
         <script src="js/theme.js"></script>
     </body>

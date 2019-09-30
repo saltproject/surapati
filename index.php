@@ -1,3 +1,9 @@
+<?php 
+
+include "admin/config/connection.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -118,9 +124,9 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav">
-                           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                           <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                            <li class="nav-item"><a class="nav-link" href="categories-no-sidebar-3column.html">Shop</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">F&Q</a></li>
@@ -304,7 +310,7 @@
                                     <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                     <li class="p_icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
                                 </ul>
-                                <h4>Womens Libero</h4>
+                                <h4>Product</h4>
                                 <h5><del>$45.50</del>  $40</h5>
                             </div>
                         </div>
@@ -318,7 +324,7 @@
                                     <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                     <li class="p_icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
                                 </ul>
-                                <h4>Oxford Shirt</h4>
+                                <h4>Product</h4>
                                 <h5>$85.50</h5>
                             </div>
                         </div>
@@ -334,7 +340,7 @@
                                     <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                     <li class="p_icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
                                 </ul>
-                                <h4>Travel Bags</h4>
+                                <h4>Product</h4>
                                 <h5><del>$45.50</del>  $40</h5>
                             </div>
                         </div>
@@ -348,7 +354,7 @@
                                     <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                     <li class="p_icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
                                 </ul>
-                                <h4>High Heel</h4>
+                                <h4>Product</h4>
                                 <h5><del>$130.50</del>  $110</h5>
                             </div>
                         </div>
@@ -364,7 +370,7 @@
                                     <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                     <li class="p_icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
                                 </ul>
-                                <h4>Summer Dress</h4>
+                                <h4>Product</h4>
                                 <h5>$45.05</h5>
                             </div>
                         </div>
@@ -378,7 +384,7 @@
                                     <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                     <li class="p_icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
                                 </ul>
-                                <h4>Fossil Watch</h4>
+                                <h4>Product</h4>
                                 <h5>$250.00</h5>
                             </div>
                         </div>
@@ -394,7 +400,7 @@
                                     <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                     <li class="p_icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
                                 </ul>
-                                <h4>Nike Shoes</h4>
+                                <h4>Product</h4>
                                 <h5><del>$130</del> $110</h5>
                             </div>
                         </div>
@@ -408,7 +414,7 @@
                                     <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                     <li class="p_icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
                                 </ul>
-                                <h4>Ricky Shirt</h4>
+                                <h4>Product</h4>
                                 <h5>$45.05</h5>
                             </div>
                         </div>
@@ -536,7 +542,7 @@
                                             <img src="img/product/featured-product/f-p-1.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <h4>Oxford Shirt</h4>
+                                            <h4>Product</h4>
                                             <h5>$45.05</h5>
                                         </div>
                                     </div>
@@ -545,7 +551,7 @@
                                             <img src="img/product/featured-product/f-p-2.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <h4>Puffer Jacket</h4>
+                                            <h4>Product</h4>
                                             <h5>$45.05</h5>
                                         </div>
                                     </div>
@@ -554,7 +560,7 @@
                                             <img src="img/product/featured-product/f-p-3.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <h4>Leather Bag</h4>
+                                            <h4>Product</h4>
                                             <h5>$45.05</h5>
                                         </div>
                                     </div>
@@ -563,7 +569,7 @@
                                             <img src="img/product/featured-product/f-p-4.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <h4>Casual Shoes</h4>
+                                            <h4>Product</h4>
                                             <h5>$45.05</h5>
                                         </div>
                                     </div>
@@ -586,7 +592,7 @@
                                                 <h5 class="sale">Sale</h5>
                                             </div>
                                             <div class="f_p_text">
-                                                <h5>Nike Max Air Vapor Power</h5>
+                                                <h5>Product</h5>
                                                 <h4>$45.05</h4>
                                             </div>
                                         </div>
@@ -598,7 +604,7 @@
                                                 <h5 class="new">New</h5>
                                             </div>
                                             <div class="f_p_text">
-                                                <h5>Fossil Watch</h5>
+                                                <h5>Product</h5>
                                                 <h4><del>$250</del> $110</h4>
                                             </div>
                                         </div>
@@ -610,7 +616,7 @@
                                                 <h5 class="discount">-10%</h5>
                                             </div>
                                             <div class="f_p_text">
-                                                <h5>High Heel</h5>
+                                                <h5>Product</h5>
                                                 <h4>$45.05</h4>
                                             </div>
                                         </div>
@@ -622,7 +628,7 @@
                                                 <h5 class="sale">Sale</h5>
                                             </div>
                                             <div class="f_p_text">
-                                                <h5>Nike Max Air Vapor Power</h5>
+                                                <h5>Product</h5>
                                                 <h4>$45.05</h4>
                                             </div>
                                         </div>
@@ -634,7 +640,7 @@
                                                 <h5 class="new">New</h5>
                                             </div>
                                             <div class="f_p_text">
-                                                <h5>Fossil Watch</h5>
+                                                <h5>Product</h5>
                                                 <h4><del>$250</del> $110</h4>
                                             </div>
                                         </div>
@@ -646,7 +652,7 @@
                                                 <h5 class="discount">-10%</h5>
                                             </div>
                                             <div class="f_p_text">
-                                                <h5>High Heel</h5>
+                                                <h5>Product</h5>
                                                 <h4>$45.05</h4>
                                             </div>
                                         </div>
@@ -658,7 +664,7 @@
                                                 <h5 class="sale">Sale</h5>
                                             </div>
                                             <div class="f_p_text">
-                                                <h5>Nike Max Air Vapor Power</h5>
+                                                <h5>Product</h5>
                                                 <h4>$45.05</h4>
                                             </div>
                                         </div>
@@ -670,7 +676,7 @@
                                                 <h5 class="new">New</h5>
                                             </div>
                                             <div class="f_p_text">
-                                                <h5>Fossil Watch</h5>
+                                                <h5>Product</h5>
                                                 <h4><del>$250</del> $110</h4>
                                             </div>
                                         </div>
@@ -682,7 +688,7 @@
                                                 <h5 class="discount">-10%</h5>
                                             </div>
                                             <div class="f_p_text">
-                                                <h5>High Heel</h5>
+                                                <h5>Product</h5>
                                                 <h4>$45.05</h4>
                                             </div>
                                         </div>
@@ -704,36 +710,27 @@
                         <h2>From The Blog</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="from_blog_item">
-                                <img class="img-fluid" src="img/blog/from-blog/f-blog-1.jpg" alt="">
-                                <div class="f_blog_text">
-                                    <h5>fashion</h5>
-                                    <p>Neque porro quisquam est qui dolorem ipsum</p>
-                                    <h6>21.09.2017</h6>
+                        <?php
+                                   include 'admin/config/connection.php';
+                                                                        
+                                   $querypost = mysqli_query($connect, "SELECT post_date, post_title, SUBSTRING(post_content,1,50) as post_content FROM surapati_posts ORDER BY post_date DESC LIMIT 3 ");
+                                   if($querypost == false){
+                                   die ("Terdapat Kesalahan : ". mysqli_error($connect));
+                                   }
+                                   while ($post = mysqli_fetch_array($querypost)){
+                                  echo "
+                        <div class='col-lg-4 col-sm-6'>
+                            <div class='from_blog_item'>
+                                <img class='img-fluid' src='img/blog/from-blog/f-blog-1.jpg' alt=''>
+                                <div class='f_blog_text'>
+                                    <h5>$post[post_title]</h5>
+                                    <p>$post[post_content]</p>
+                                    <h6>$post[post_date]</h6>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="from_blog_item">
-                                <img class="img-fluid" src="img/blog/from-blog/f-blog-2.jpg" alt="">
-                                <div class="f_blog_text">
-                                    <h5>fashion</h5>
-                                    <p>Neque porro quisquam est qui dolorem ipsum</p>
-                                    <h6>21.09.2017</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="from_blog_item">
-                                <img class="img-fluid" src="img/blog/from-blog/f-blog-3.jpg" alt="">
-                                <div class="f_blog_text">
-                                    <h5>fashion</h5>
-                                    <p>Neque porro quisquam est qui dolorem ipsum</p>
-                                    <h6>21.09.2017</h6>
-                                </div>
-                            </div>
-                        </div>
+                        </div>";
+                    }
+                    ?>
                     </div>
                 </div>
             </div>
