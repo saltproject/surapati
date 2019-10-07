@@ -1,7 +1,7 @@
 ﻿/* Navbar ====================================== */
 @import url(materialize.css);
 .navbar {
-  font-family: "Poppins", sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -2368,7 +2368,7 @@ body {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Sofia Pro", sans-serif; }
 
 h1,
 h2,
@@ -6922,7 +6922,7 @@ fieldset[disabled] .form-control {
 
 /* Navbars ===================================== */
 .navbar {
-  font-family: "Poppins", sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -7756,19 +7756,19 @@ fieldset[disabled] .form-control {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   background: #fdfdfd;
-  width: 300px;
+  width: 250px;
   overflow: hidden;
   display: inline-block;
   height: calc(100vh - 70px);
   position: fixed;
   top: 70px;
   left: 0;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  //*-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); *//
   z-index: 11 !important; }
   .sidebar .legal {
     position: absolute;
@@ -8016,11 +8016,21 @@ fieldset[disabled] .form-control {
   margin-top: 2%;
   padding-left: 5%;
   position: absolute; }
+  
+  @media (max-width: 997px) {
+    .login-page img {
+     width: 30%;
+     margin-top: 0;
+     margin-left: 32%;
+     margin-right: auto;
+     position: relative;
+   }}
 
   @media (max-width: 768px) {
    .login-page img {
+    width:48%;
     margin-top: 0;
-    margin-left: 25%;
+    margin-left: 23%;
     margin-right: auto;
     position: relative;
   }}

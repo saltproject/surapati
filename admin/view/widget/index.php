@@ -1,12 +1,4 @@
-<?php
-                                   include '../config/connection.php';
-                                                                        
-                                   $querypost = mysqli_query($connect, "SELECT * FROM surapati_posts");
-                                   if($querypost == false){
-                                   die ("Terdapat Kesalahan : ". mysqli_error($connect));
-                                   }
-                                   while ($post = mysqli_fetch_array($querypost));
-                            ?>
+
 <section class="content">
         <div class="container-fluid">
             <div class="block-header">
@@ -21,19 +13,42 @@
                             <i class="material-icons">playlist_add_check</i>
                         </div>
                         <div class="content">
-                            <div class="text"><?php echo "".$post['title']."" ?></div>
-                            <div class="number count-to" data-from="0" data-to="" data-speed="15" data-fresh-interval="20"></div>
+
+                        <?php
+						$queryspl = mysqli_query ($connect, "SELECT id_post, post_title, post_author, post_date, post_status, COUNT(id_post) as jumlah FROM surapati_posts");
+						if($queryspl == false){
+							die ("Terjadi Kesalahan : ". mysqli_error($connect));
+						}
+
+						while ($spl = mysqli_fetch_array ($queryspl)){
+                            
+                            echo "<div class='text'>ALL ARTICLE</div>
+                            <div class='number count-to' data-from='0' data-to='' data-speed='15' data-fresh-interval='20'>$spl[jumlah]</div>
+                            ";
+                        }
+                            ?>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-cyan hover-expand-effect">
                         <div class="icon">
-                            <i class="material-icons">help</i>
+                            <i class="material-icons">person</i>
                         </div>
                         <div class="content">
-                            <div class="text">NEW TICKETS</div>
-                            <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
+                        <?php
+						$queryspl = mysqli_query ($connect, "SELECT COUNT(id_user) as jumlah FROM surapati_user");
+						if($queryspl == false){
+							die ("Terjadi Kesalahan : ". mysqli_error($connect));
+						}
+
+						while ($spl = mysqli_fetch_array ($queryspl)){
+                            
+                            echo "<div class='text'>USERS</div>
+                            <div class='number count-to' data-from='0' data-to='' data-speed='15' data-fresh-interval='20'>$spl[jumlah]</div>
+                            ";
+                        }
+                            ?>
                         </div>
                     </div>
                 </div>

@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <button id="add_post" class="btn btn-lg bg-cyan waves-effect" type="submit">TAMBAH</button>
-                                    <a href="index.php?komposisi-produk" class="btn btn-lg bg-red waves-effect" id="back">BATAL</a>
+                                    <a href="index.php" class="btn btn-lg bg-red waves-effect" id="back">BATAL</a>
                               </div>
                                </div>
                                </div>
