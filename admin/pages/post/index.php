@@ -49,6 +49,7 @@
                 </div>
             </div>-->
             <!-- #END# Widgets -->
+
             <!-- CPU Usage -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -93,6 +94,52 @@
                 </div>
             </div>
             <!-- #END# CPU Usage -->
+
+                         <!-- Body Copy -->
+            <div class="row clearfix">
+
+                 <?php
+                                   include '../../admin/config/connection.php';
+                                                                        
+                                   $querypost = mysqli_query($connect, "SELECT post_date, post_title, post_content, post_author FROM surapati_posts");
+                                   if($querypost == false){
+                                   die ("Terdapat Kesalahan : ". mysqli_error($connect));
+                                   }
+                                   while ($post = mysqli_fetch_array($querypost)){
+                                  echo "
+                <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <div class='card'>
+                        <div class='header'>
+                            <h2>
+                                $post[post_title]
+                            </h2>
+                            <ul class='header-dropdown m-r--5'>
+                                <li class='dropdown'>
+                                    <a href='javascript:void(0);' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>
+                                        <i class='material-icons'>more_vert</i>
+                                    </a>
+                                    <ul class='dropdown-menu pull-right'>
+                                        <li><a href='Delete'>Delete</a></li>
+                                        <li><a href='Edit'>Edit</a></li>
+                                        <li><a href='Mark as Favorite'>Mark as Favorite</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='body'>
+                            <p class='lead'>
+                                $post[post_content]
+                            </p>
+                        </div>
+                        <blockquote>
+                                <footer>Posted by <cite title='Source Title'>$post[post_author]</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>";
+                                    }
+                    ?>
+            </div>
+            <!-- #END# Body Copy -->
         </div>
     </section>
     

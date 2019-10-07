@@ -32,11 +32,52 @@
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
+                    
                     <li>
-                        <a href="index.php?post">
-                            <i class="material-icons">call_to_action</i>
-                            <span>Update Artikel</span>
+                        <li>
+                                    <a href="index.php?add_post">
+                                        <i class="material-icons">call_to_action</i>
+                                        <span>Account</span>
+                                    </a>
+                        </li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">trending_up</i>
+                            <span>Articles</span>
                         </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="index.php?post">
+                                    <i class="material-icons">call_to_action</i>
+                                    <span>All</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.php?add_post">
+                                    <i class="material-icons">call_to_action</i>
+                                    <span>Update Artikel</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">trending_up</i>
+                            <span>Product</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="material-icons">call_to_action</i>
+                                    <span>Update Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.php?product">
+                                    <i class="material-icons">call_to_action</i>
+                                    <span>Update Product</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="../controller/logout.php">

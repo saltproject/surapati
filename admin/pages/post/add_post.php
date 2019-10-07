@@ -18,20 +18,29 @@
                               <form action="../controller/post/add.php" id="sign_in" method="POST">
                                <div id="addMoreAgain">
                                 <div id="addMore">
-                                 <div class="col-xs-12">
+                                 <div class="col-sm-6">
                                      <div class="input-group">
                                         <div class="form-line">
                                             <input type="text" name="title" class="form-control" placeholder="Judul Post" required>
                                         </div>
                                     </div>
-                                    <div class="input-group">
+                                </div>
+                            <div class="col-xs-12">
+                                <div class="input-group">
                                         <div class="form-line">
                                             <textarea name="content" id="editor" cols="80" rows="5"></textarea>
                                         </div>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="col-sm-6">
+                                    <div class="form-group demo-tagsinput-area">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" data-role="tagsinput" placeholder="Insert Tags">
+                                        </div>
+                                    </div>
+                            </div>
                                 <div class="col-sm-6">
-                                    <div class="input-group">
+                                    <div class="input-group hidden">
                                         <span class="input-group-addon">
                                             <i class="material-icons">person</i>
                                         </span>

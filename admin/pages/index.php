@@ -40,6 +40,9 @@
     <!-- Waves Effect Css -->
     <link href="../assets/plugins/node-waves/waves.css" rel="stylesheet" />
 
+     <!-- Dropzone Css -->
+    <link href="../assets/plugins/dropzone/dropzone.css" rel="stylesheet">
+
     <!-- Bootstrap Select Css -->
     <link href="../assets/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
@@ -48,6 +51,9 @@
 
     <!-- Animation Css -->
     <link href="../assets/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="../assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
 
     <!-- Bootstrap Material Datetime Picker Css -->
     <link href="../assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
@@ -93,6 +99,7 @@
     </nav>
     <!-- #Top Bar -->
 
+
     <!-- Menuju Menu Sesuai Hak Akses -->
     <?php 
 
@@ -127,6 +134,9 @@
     <!-- Jquery Core Js -->
     <script src="../assets/plugins/jquery/jquery.min.js"></script>
 
+    <!-- Dropzone Plugin Js -->
+    <script src="../assets/plugins/dropzone/dropzone.js"></script>
+
     <!-- Editor Core Js -->
     <script src="../assets/plugins/ckeditor/ckeditor.js"></script>
 
@@ -154,6 +164,12 @@
 
     <!-- Bootstrap Core Js -->
     <script src="../assets/plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Bootstrap Tags Input Plugin Js -->
+    <script src="../assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+    <!-- Multi Select Plugin Js -->
+    <script src="../assets/plugins/multi-select/js/jquery.multi-select.js"></script>
 
     <!-- Select Plugin Js -->
     <script src="../assets/plugins/bootstrap-select/js/bootstrap-select.js"></script>
