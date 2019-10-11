@@ -36,12 +36,12 @@
                     <li>
                         <li>
                                     <a href="index.php?add_post">
-                                        <i class="material-icons">call_to_action</i>
+                                        <i class="material-icons">person</i>
                                         <span>Account</span>
                                     </a>
                         </li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">trending_up</i>
+                            <i class="material-icons">call_to_action</i>
                             <span>Articles</span>
                         </a>
                         <ul class="ml-menu">
